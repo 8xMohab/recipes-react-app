@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.container-fluid {
+  padding: 20px 15px 0 15px;
+}
+
+.App form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.App form input {
+  font-size: 30px;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 500;
+  padding-left: 15px;
+  color: rgb(62, 62, 62);
+}
+.App form input::-webkit-input-placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-left: 7px;
+  color: black;
+}
+.App form input::-moz-placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-left: 7px;
+  color: black;
+}
+.App form input:-ms-input-placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-left: 7px;
+}
+.App form input::-ms-input-placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-left: 7px;
+  color: black;
+}
+.App form input::placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+  padding-left: 7px;
+  color: black;
+}
+.App form button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  font-size: 30px;
+}
+.App form button i {
+  color: black;
+}
+.App .recipes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.App .recipes-container .recipe {
+  margin: 20px;
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  padding: 20px;
+}
+.App .recipes-container .recipe .image {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.App .recipes-container .recipe .recipe-des {
+  margin-top: 20px;
+}
+.App .recipes-container .recipe .recipe-des h2 {
+  font-weight: 500;
+  font-size: 25px;
+}
+.App .recipes-container .recipe .recipe-des p {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.App .recipes-container .recipe .recipe-des p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.recipe-display {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: rgba(255, 255, 255, 0.99);
+  z-index: 1;
+  color: black;
+  text-align: center;
+  transition: 0.3s;
+}
+.recipe-display .image {
+  width: 50%;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 5px black;
+  margin: auto;
+}
+.recipe-display .recipe-des {
+  margin: auto;
+  margin-top: 20px;
+}
+.recipe-display p {
+  margin-bottom: 10px;
+}
+.list-group {
+  max-width: 50%;
+  margin: auto;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 762px) {
+  .list-group {
+    max-width: 100%;
+  }
+}
+.list-group-item {
+  background-color: rgb(255 255 255 / 0);
+  margin-bottom: 5px;
+}
+.recipe-display button {
+  margin-top: 20px;
+}
