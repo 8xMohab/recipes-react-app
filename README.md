@@ -31,6 +31,7 @@
 
  - Reloading animations while fetching the data from the API
  - useContext to prevent passing the state to every component
+ - infinte scroll whenever you reach the bottom of the page
 
 ## Author
 
