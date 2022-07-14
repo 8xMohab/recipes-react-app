@@ -18,7 +18,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://8xmohab.github.io/recipes-react-app/)
 
 ### Built with
 
